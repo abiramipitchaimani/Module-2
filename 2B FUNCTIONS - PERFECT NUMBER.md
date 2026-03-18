@@ -1,35 +1,42 @@
-# Exp.No:2(b) FUNCTIONS-MODULO VALUE.
+# Exp.No:2b  
+## FUNCTIONS - PERFECT NUMBER
 
-# AIM
-To write a Python program to define a function that accepts 2 values and return its modulo value
+### AIM  
+To write a Python program to check if a number is a Perfect number using the concept of functions.
 
-# ALGORITHM
-1.Start
+---
 
-2.Read integer a from the user
+### ALGORITHM
 
-3.Read integer b from the user
+1. Begin the program.  
+2. Read the number `n` from the user using `input()`.  
+3. Convert the input to an integer.  
+4. Define the function `perfectNumber(n)` with the following steps:  
+    - Initialize a variable `factor_sum` to 0.  
+    - Iterate through all numbers from 1 to `n//2` (as divisors of a number can't be greater than half of it).  
+    - If a number `i` divides `n` perfectly (i.e., `n % i == 0`), add `i` to `factor_sum`.  
+    - If `factor_sum` is equal to `n`, then print the number is a perfect number. Otherwise, print it's not a perfect number.  
+5. Terminate the program.
 
-4.Compute the remainder: c = a % b
+---
 
-5.Print the result as "modulo is", c
-
-6.End
-
-# PROGRAM
+### PROGRAM
 ```
 #Reg.No:212222060006
 #Name:Abirami P
-def result (a,b):
-    c= a%b
-    print ("modulo is",c)
-
-a=int(input())
-b=int(input())
+#Add your Code Here
+n = int(input())
+sum1 = 0
+for i in range(1, n):
+    if(n % i == 0):
+        sum1 = sum1 + i
+if (sum1 == n):
+    print("The number is a Perfect number!")
+else:
+    print("The number is not a Perfect number!")
 ```
-# OUTPUT
-<img width="529" height="196" alt="image" src="https://github.com/user-attachments/assets/23ff6cd0-2aea-4bdd-b350-1f184bc75cd2" />
+### OUTPUT
+<img width="950" height="270" alt="image" src="https://github.com/user-attachments/assets/31f61eaf-ddbb-41e0-ac15-451649d9591d" />
 
-
-# RESULT
-Thus the python program to define a function that accepts 2 values and return its modulo value has been implemented and executed successfully.
+### RESULT
+Thus a Python program to check if a number is a Perfect number using the concept of functions was executed and implemented successfully.
