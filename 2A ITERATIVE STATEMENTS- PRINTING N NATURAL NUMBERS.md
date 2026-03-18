@@ -15,10 +15,8 @@ To create a Python program for printing n natural numbers using a for loop.
 7.Terminate the program.
 ###  Program
 ```
-Name : Abirami P
-Register Number : 212222060006
-```
-```
+#Reg.No:212222060006
+#Name:Abirami P
 a=int(input())
 print("Natural Numbers are :")
 for i in range(1,a+1):
